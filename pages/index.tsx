@@ -1,28 +1,15 @@
+import About from '@/comps/About';
+import Footer from '@/comps/Footer';
+import Hero from '@/comps/Hero';
+import Portfolio from '@/comps/Portfolio';
+import Skills from '@/comps/Skills';
+import Testimonials from '@/comps/Testimonials';
+import Title from '@/comps/Title';
 import Head from 'next/head'
 import { useEffect, useState,useCallback } from "react"
 
-
 export default function Home() {
-  // const container = document.getElementById("container")
   const [count, setCount] = useState(0);
-  
-  switch (true) {
-    case (count < 10 ):
-      
-      break;
-    case (count < 20 ):
-      
-      break;
-    case (count < 30 ):
-      
-      break;
-  
-    default:
-      break;
-  }
-  const [active, setActive] = useState(false);
-  const test = <div className='absolute self-center justify-self-center w-10/12 h-5/6 bg-slate-500'></div>;
-  const test2 = <div className='absolute bottom-full self-center justify-self-center w-10/12 h-5/6 bg-slate-600'></div>;
   return (
     <>
       <Head>
@@ -50,8 +37,13 @@ export default function Home() {
           <div className="fixed z-50 self-center right-5 w-1 bg-gray-200 rounded-full h-4/5 dark:bg-gray-700">
             <div className="bg-blue-600 h-2.5 rounded-full" style={{["height" as any]: count+"%"}}></div>
           </div>
-          
-          
+          {count >= 0 && count <= 10 ? <Hero></Hero>: null }
+          {count > 10 && count <= 20 ? <About></About>: null }
+          {count > 20 && count <= 30 ? <Skills></Skills>: null }
+          {count > 30 && count <= 40 ? <Title></Title>: null }
+          {count > 40 && count <= 50 ? <Portfolio></Portfolio>: null }
+          {count > 50 && count <= 60 ? <Testimonials></Testimonials>: null }
+          {count > 60 && count <= 70 ? <Footer></Footer>: null }
       </div>
     </>
   )
