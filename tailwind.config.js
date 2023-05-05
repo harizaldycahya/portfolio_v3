@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors:{
+        white:'#FFFFFF',
         primary:'#00ADB5',
         secondary: {
           100:'#393E46',
@@ -14,8 +15,34 @@ module.exports = {
         },
       },
       fontFamily:{
-        body: ['Space Mono','monospace'],
-        title:['Roboto','sans-serif'],
+        body: ['Poppins','sans-serif'],
+        title:['Poppins','sans-serif'],
+      },
+      fontSize: {
+        xl: ['2.5rem',{ 
+          lineHeight: '3rem',
+          letterSpacing: '.0001rem',
+        }
+        ],
+        lg: '1rem',
+        sm: ['.8rem',{
+          lineHeight: '2rem',
+          letterSpacing: '.1rem',
+          fontWeight: '400',
+        }
+        ],
+        label: ['.8rem',{
+          lineHeight: '1rem',
+          letterSpacing: '.1rem',
+          fontWeight: '700',
+        }
+        ],
+        icon: ['1.8rem',{
+          lineHeight: '1rem',
+          letterSpacing: '.1rem',
+          fontWeight: '700',
+        }
+        ],
       }
     },
   },

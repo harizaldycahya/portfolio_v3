@@ -9,7 +9,6 @@ import Head from 'next/head'
 import { useEffect, useState,useCallback } from "react"
 
 export default function Home() {
-  const [count, setCount] = useState(0);
   return (
     <>
       <Head>
@@ -21,30 +20,32 @@ export default function Home() {
         <link href="./fontawesome/css/brands.css" rel="stylesheet"/>
         <link href="./fontawesome/css/solid.css" rel="stylesheet"/>
       </Head>
-      <div className='fixed w-100 h-100 bg-green-500 z-10'>
-        {count} 
-      </div>
-      
-      <div onWheel={ event => {
-              if (event.nativeEvent.deltaY > 0 && count < 100) {
-                    setCount(count + 1)
-              } else if(event.nativeEvent.deltaY < 0 && count > 0){
-                setCount(count - 1)
-              }
-            }}  
-            id='container' className="overflow-x-hidden grid h-screen w-screen bg-slate-300">
-          
-          <div className="fixed z-50 self-center right-5 w-1 bg-gray-200 rounded-full h-4/5 dark:bg-gray-700">
-            <div className="bg-blue-600 h-2.5 rounded-full" style={{["height" as any]: count+"%"}}></div>
+      <div className="container box-border lg:px-32 font-body">
+        <div className="navbar grid grid-cols-1 md:grid-cols-12 gap-5 w-full items-center mt-5 p-5 lg:p-0">
+            <h1 className='md:col-span-2 xl:col-span-2 text-icon font-black'>ALDY</h1>
+            <p className='md:col-span-2 xl:col-span-1'>Projects</p>
+            <p className='md:col-span-2 xl:col-span-1'>LinkedIn</p>
+            <p className='md:col-span-2 xl:col-span-1'>Contact</p>
+        </div>
+        <div className="hero bg-cyan-100 mt-12 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap">
+          <div className="col-span-12 lg:col-span-5">
+              <div className="text-xl font-black">
+                <h1>HELLO, I AM</h1>
+                <h1>WEBSITE</h1>
+                <h1>FRONTEND</h1>
+                <h1>DEVELOPER</h1>
+              </div>
+              <p className='mt-5'>I Like to design and create website that is responsive, interactive, simple and scalable</p>
+              <div className="grid grid-cols-12 mt-5 text-center gap-5">
+                <div className='cursor-pointer col-span-6 bg-black text-white py-2'>Download CV</div>
+                <div className='cursor-pointer col-span-6 py-2 border border-black'>Contact Me</div>
+              </div>
           </div>
-          {count >= 0 && count <= 10 ? <Hero></Hero>: null }
-          {count > 10 && count <= 20 ? <About></About>: null }
-          {count > 20 && count <= 30 ? <Skills></Skills>: null }
-          {count > 30 && count <= 40 ? <Title></Title>: null }
-          {count > 40 && count <= 50 ? <Portfolio></Portfolio>: null }
-          {count > 50 && count <= 60 ? <Testimonials></Testimonials>: null }
-          {count > 60 && count <= 70 ? <Footer></Footer>: null }
+         <div className="col-span-12 lg:col-span-7 w-3/5 ml-auto relative">
+          <img className='' src="photo.jpg" alt="" />
+          <div className="w-full h-5/6 rotate-2 border-8 border-black absolute top-3 right-8"></div>
+         </div>
+        </div>
       </div>
     </>
-  )
-}
+)}
