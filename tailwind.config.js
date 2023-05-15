@@ -15,7 +15,7 @@ module.exports = {
         },
       },
       fontFamily:{
-        body: ['Poppins','sans-serif'],
+        body: ['Pontano Sans','sans-serif'],
         title:['Poppins','sans-serif'],
       },
       fontSize: {
@@ -24,13 +24,8 @@ module.exports = {
           letterSpacing: '.0001rem',
         }
         ],
-        lg: '1rem',
-        sm: ['.8rem',{
-          lineHeight: '2rem',
-          letterSpacing: '.1rem',
-          fontWeight: '400',
-        }
-        ],
+        lg: '1.5rem',
+        sm: '1rem',
         label: ['.8rem',{
           lineHeight: '1rem',
           letterSpacing: '.1rem',

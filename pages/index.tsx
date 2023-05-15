@@ -20,13 +20,15 @@ export default function Home() {
         <link href="./fontawesome/css/brands.css" rel="stylesheet"/>
         <link href="./fontawesome/css/solid.css" rel="stylesheet"/>
       </Head>
-      <div className="container box-border lg:px-32 font-body">
-        <div className="navbar grid grid-cols-1 md:grid-cols-12 gap-5 w-full items-center mt-5 p-5 lg:p-0">
+      <div className="container box-border lg:px-32 font-title">
+        <div className="navbar grid grid-cols-1 md:grid-cols-12 gap-5 w-full items-center mt-10 p-5 lg:p-0">
             <h1 className='md:col-span-2 xl:col-span-2 text-icon font-black'>ALDY</h1>
             <p className='md:col-span-2 xl:col-span-1'>Projects</p>
             <p className='md:col-span-2 xl:col-span-1'>LinkedIn</p>
             <p className='md:col-span-2 xl:col-span-1'>Contact</p>
         </div>
+
+
         <div className="hero bg-cyan-100 mt-12 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap">
           <div className="col-span-12 lg:col-span-5">
               <div className="text-xl font-black">
@@ -45,6 +47,149 @@ export default function Home() {
           <img className='' src="photo.jpg" alt="" />
           <div className="w-full h-5/6 rotate-2 border-8 border-black absolute top-3 right-8"></div>
          </div>
+        </div>
+
+
+        <div className="techstack grid grid-cols-12 text-left mt-52 mb-52 font-title font-semibold px-20 content-center">
+            <div className="col-span-12 text-sm  mb-10 font-light font-body tracking-widest">
+              <div className="text-lg font-black mb-5">
+                <h1>ABOUT ME</h1>
+              </div>
+              My name is Aldy. I live in Bengkulu Indonesia. I design and create website. My main focus are in frontend development using react and tailwind. I also have experience with backend development using laravel. 
+              My preferred tools are :
+            </div>
+            
+            <div className="col-span-2 text-sm grid grid-cols-12 gap-1">
+              <div className="col-span-2 justify-end">
+                <img  className="aspect-square" src="/react.svg" alt="" />
+              </div>
+              <div className="col-span-10 text-left self-center">
+                React
+              </div>
+            </div>
+            <div className="col-span-2 text-sm grid grid-cols-12 gap-1">
+              <div className="col-span-2 justify-end">
+                <img  className="aspect-square" src="/tailwind.svg" alt="" />
+              </div>
+              <div className="col-span-10 text-left self-center">
+                Tailwind
+              </div>
+            </div>
+            <div className="col-span-2 text-sm grid grid-cols-12 gap-1">
+              <div className="col-span-2 justify-end">
+                <img  className="aspect-square" src="/figma.svg" alt="" />
+              </div>
+              <div className="col-span-10 text-left self-center">
+                Figma
+              </div>
+            </div>
+            <div className="col-span-2 text-sm grid grid-cols-12 gap-1">
+              <div className="col-span-2 justify-end">
+                <img  className="aspect-square" src="/html.svg" alt="" />
+              </div>
+              <div className="col-span-10 text-left self-center">
+                HTML
+              </div>
+            </div>
+            <div className="col-span-2 text-sm grid grid-cols-12 gap-1">
+              <div className="col-span-2 justify-end">
+                <img  className="aspect-square" src="/css.svg" alt="" />
+              </div>
+              <div className="col-span-10 text-left self-center">
+                CSS
+              </div>
+            </div>
+            <div className="col-span-2 text-sm grid grid-cols-12 gap-1">
+              <div className="col-span-2 justify-end">
+                <img  className="aspect-square" src="/javascript.svg" alt="" />
+              </div>
+              <div className="col-span-10 text-left self-center">
+                Javascript
+              </div>
+            </div>
+        </div>
+
+        
+        <div className="project mt-12 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap">
+        <div className="col-span-12 lg:col-span-8 w-5/6">
+            <img className='' src="photo.jpg" alt="" />
+         </div>
+          <div className="col-span-12 lg:col-span-4 self-center">
+              <div className="text-lg font-black">
+                <h1>BEANBAG BENGKULU</h1>
+              </div>
+              <p className='mt-5'>I Like to design and create website that is responsive, interactive, simple and scalable</p>
+              <div className="grid grid-cols-12 mt-5 text-center gap-5">
+                <div className='cursor-pointer col-span-6 bg-black text-white py-2'>Download CV</div>
+                <div className='cursor-pointer col-span-6 py-2 border border-black'>Contact Me</div>
+              </div>
+          </div>
+         
+        </div>
+
+
+        <div className="project mt-12 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap">
+        <div className="col-span-12 lg:col-span-4 text-right self-center">
+              <div className="text-lg font-black">
+                <h1>SPOTIFY CLONE</h1>
+              </div>
+              <p className='mt-5'>I Like to design and create website that is responsive, interactive, simple and scalable</p>
+              <div className="grid grid-cols-12 mt-5 text-center gap-5">
+                <div className='cursor-pointer col-span-6 bg-black text-white py-2'>Download CV</div>
+                <div className='cursor-pointer col-span-6 py-2 border border-black'>Contact Me</div>
+              </div>
+          </div>
+          <div className="col-span-12 lg:col-span-8 w-5/6 ml-auto">
+              <img className='' src="photo.jpg" alt="" />
+          </div>
+        </div>
+
+
+        <div className="Contact bg-cyan-100 mt-24 mb-52 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap">
+          <div className="col-span-12 lg:col-span-12 text-center">
+              <div className="text-xl font-black">
+                <h1>GET IN TOUCH</h1>
+              </div>
+              <p className='mt-5'>If you’d like to chat about a project or just have question, just contact me via email or whatsapp</p>
+              <div className="grid grid-cols-12 mt-5 text-center gap-5 ">
+                <div className="col-span-2"></div>
+                <div className='cursor-pointer col-span-4 bg-black text-white py-2'> <i className="fa-solid fa-envelope mx-2"></i> EMAIL</div>
+                <div className='cursor-pointer col-span-4 py-2 border border-black'> <i className="fa-brands fa-whatsapp mx-2"></i> WHATSAPP</div>
+                <div className="col-span-2"></div>
+              </div>
+          </div>
+        </div>
+        <hr />
+        <div className="m-5"></div>
+        <div className="footer mt-12 w-full rounded-3xl grid grid-cols-12 gap mb-5">
+          <div className="col-span-12 lg:col-span-6">
+              <div className="text-xl font-black">
+                <h1>ALDY</h1>
+              </div>
+              <p className='mt-5'>Always Learning Something New Everyday</p>
+          </div>
+          <div className="col-span-12 lg:col-span-6 text-right grid grid-cols-12 ">
+              <div className="col-span-6">
+                <div className="text-sm font-black">
+                  <h1>CONTACT</h1>
+                </div>
+                <p className='mt-5'>Email</p>
+                <p className='mt-5'>Whatsapp</p>
+              </div>
+              <div className="col-span-6">
+                <div className="text-sm font-black">
+                  <h1>SOCIAL MEDIA</h1>
+                </div>
+                <p className='mt-5'>Instagram</p>
+                <p className='mt-5'>Twitter</p>
+                <p className='mt-5'>Facebook</p>
+              </div>
+          </div> 
+          <div className="m-5"></div>
+          <div className="text-center col-span-12">
+            <hr className='my-5' />
+              &copy; {new Date().getFullYear()} Portfolio by Aldy
+          </div>
         </div>
       </div>
     </>
