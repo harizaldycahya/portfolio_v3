@@ -27,8 +27,6 @@ export default function Home() {
             <p className='md:col-span-2 xl:col-span-1'>LinkedIn</p>
             <p className='md:col-span-2 xl:col-span-1'>Contact</p>
         </div>
-
-
         <div className="hero bg-cyan-100 mt-12 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap">
           <div className="col-span-12 lg:col-span-5">
               <div className="text-xl font-black">
@@ -40,7 +38,7 @@ export default function Home() {
               <p className='mt-5'>I Like to design and create website that is responsive, interactive, simple and scalable</p>
               <div className="grid grid-cols-12 mt-5 text-center gap-5">
                 <div className='cursor-pointer col-span-6 bg-black text-white py-2'>Download CV</div>
-                <div className='cursor-pointer col-span-6 py-2 border border-black'>Contact Me</div>
+                <a href='mailto:zaldypratama83@gmail.com?subject=Get In Touch' className='cursor-pointer col-span-6 py-2 border border-black'>Contact Me</a>
               </div>
           </div>
          <div className="col-span-12 lg:col-span-7 w-3/5 ml-auto relative">
@@ -48,8 +46,6 @@ export default function Home() {
           <div className="w-full h-5/6 rotate-2 border-8 border-black absolute top-3 right-8"></div>
          </div>
         </div>
-
-
         <div className="techstack grid grid-cols-12 text-left mt-52 mb-52 font-title font-semibold px-20 content-center">
             <div className="col-span-12 text-sm  mb-10 font-light font-body tracking-widest">
               <div className="text-lg font-black mb-5">
@@ -108,11 +104,19 @@ export default function Home() {
               </div>
             </div>
         </div>
+        <hr />
 
-        
-        <div className="project mt-12 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap">
-        <div className="col-span-12 lg:col-span-8 w-5/6">
-            <img className='' src="photo.jpg" alt="" />
+        <div className="self-center text-center">
+          <div className="mt-56"></div>
+            <div className="text-lg font-black">
+              <h1>MY WORK HIGHLIGHT</h1>
+            </div>
+            <p className='mt-5'>Responsive | Interactive | Clean | Simple</p>
+            
+        </div>
+        <div className="project mt-12 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap cursor-pointer">
+        <div className="col-span-12 lg:col-span-8 w-5/6 h-96 overflow-hidden shadow-md">
+            <img className='' src="project_1.png" alt="" />
          </div>
           <div className="col-span-12 lg:col-span-4 self-center">
               <div className="text-lg font-black">
@@ -126,8 +130,6 @@ export default function Home() {
           </div>
          
         </div>
-
-
         <div className="project mt-12 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap">
         <div className="col-span-12 lg:col-span-4 text-right self-center">
               <div className="text-lg font-black">
@@ -143,8 +145,6 @@ export default function Home() {
               <img className='' src="photo.jpg" alt="" />
           </div>
         </div>
-
-
         <div className="Contact bg-cyan-100 mt-24 mb-52 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap">
           <div className="col-span-12 lg:col-span-12 text-center">
               <div className="text-xl font-black">
@@ -153,8 +153,8 @@ export default function Home() {
               <p className='mt-5'>If you’d like to chat about a project or just have question, just contact me via email or whatsapp</p>
               <div className="grid grid-cols-12 mt-5 text-center gap-5 ">
                 <div className="col-span-2"></div>
-                <div className='cursor-pointer col-span-4 bg-black text-white py-2'> <i className="fa-solid fa-envelope mx-2"></i> EMAIL</div>
-                <div className='cursor-pointer col-span-4 py-2 border border-black'> <i className="fa-brands fa-whatsapp mx-2"></i> WHATSAPP</div>
+                <a href="mailto:zaldypratama83@gmail.com?subject=Get In Touch" className='cursor-pointer col-span-4 bg-black text-white py-2'> <i className="fa-solid fa-envelope mx-2"></i> EMAIL</a>
+                <a href="https://wa.me/+6289632167121/?text=Hello" className='cursor-pointer col-span-4 py-2 border border-black'> <i className="fa-brands fa-whatsapp mx-2"></i> WHATSAPP</a>
                 <div className="col-span-2"></div>
               </div>
           </div>
