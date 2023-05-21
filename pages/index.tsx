@@ -7,6 +7,7 @@ import Testimonials from '@/comps/Testimonials';
 import Title from '@/comps/Title';
 import Head from 'next/head'
 import { useEffect, useState,useCallback } from "react"
+import {motion} from 'framer-motion'
 
 export default function Home() {
   return (
@@ -20,12 +21,12 @@ export default function Home() {
         <link href="./fontawesome/css/brands.css" rel="stylesheet"/>
         <link href="./fontawesome/css/solid.css" rel="stylesheet"/>
       </Head>
-      <div className="container box-border lg:px-32 font-title">
+      <div className="container box-border lg:px-32 font-title scroll-smooth">
         <div className="navbar grid grid-cols-1 md:grid-cols-12 gap-5 w-full items-center mt-10 p-5 lg:p-0">
             <h1 className='md:col-span-2 xl:col-span-2 text-icon font-black'>ALDY</h1>
-            <p className='md:col-span-2 xl:col-span-1'>Projects</p>
-            <p className='md:col-span-2 xl:col-span-1'>LinkedIn</p>
-            <p className='md:col-span-2 xl:col-span-1'>Contact</p>
+            <a href='#projects' className='md:col-span-2 xl:col-span-1'>Projects</a>
+            <a href='https://www.linkedin.com/in/zaldy-pratama-2891ab275/' className='md:col-span-2 xl:col-span-1'>LinkedIn</a>
+            <a href='#contact' className='md:col-span-2 xl:col-span-1'>Contact</a>
         </div>
         <div className="hero bg-cyan-100 mt-12 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap">
           <div className="col-span-12 lg:col-span-5">
@@ -43,7 +44,7 @@ export default function Home() {
           </div>
          <div className="col-span-12 lg:col-span-7 w-3/5 ml-auto relative">
           <img className='' src="photo.jpg" alt="" />
-          <div className="w-full h-5/6 rotate-2 border-8 border-black absolute top-3 right-8"></div>
+          <motion.div animate={{rotate:180, x:20}} transition={{repeat:Infinity, duration:40}} className="w-full h-5/6 border-8 border-black absolute top-3 right-8"></motion.div>
          </div>
         </div>
         <div className="techstack grid grid-cols-12 text-left mt-52 mb-52 font-title font-semibold px-20 content-center">
@@ -106,7 +107,7 @@ export default function Home() {
         </div>
         <hr />
 
-        <div className="self-center text-center">
+        <div id='projects' className="self-center text-center">
           <div className="mt-56"></div>
             <div className="text-lg font-black">
               <h1>MY WORK HIGHLIGHT</h1>
@@ -115,8 +116,8 @@ export default function Home() {
             
         </div>
         <div className="project mt-12 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap cursor-pointer">
-        <div className="col-span-12 lg:col-span-8 w-5/6 h-96 overflow-hidden shadow-md">
-            <img className='' src="project_1.png" alt="" />
+        <div className="col-span-12 lg:col-span-8 w-5/6 h-96 overflow-hidden shadow-md relative">
+            <motion.img whileHover={{bottom:0}} transition={{duration:5}} className='absolute' src="project_1.png" alt="" />
          </div>
           <div className="col-span-12 lg:col-span-4 self-center">
               <div className="text-lg font-black">
@@ -145,7 +146,7 @@ export default function Home() {
               <img className='' src="photo.jpg" alt="" />
           </div>
         </div>
-        <div className="Contact bg-cyan-100 mt-24 mb-52 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap">
+        <div id='contact' className="Contact bg-cyan-100 mt-24 mb-52 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap">
           <div className="col-span-12 lg:col-span-12 text-center">
               <div className="text-xl font-black">
                 <h1>GET IN TOUCH</h1>
@@ -173,16 +174,16 @@ export default function Home() {
                 <div className="text-sm font-black">
                   <h1>CONTACT</h1>
                 </div>
-                <p className='mt-5'>Email</p>
-                <p className='mt-5'>Whatsapp</p>
+                <a href='mailto:zaldypratama83@gmail.com?subject=Get In Touch' className='mt-5 cursor-pointer block'>Email</a>
+                <a href='https://wa.me/+6289632167121/?text=Hello' className='mt-5 cursor-pointer block'>Whatsapp</a>
               </div>
               <div className="col-span-6">
                 <div className="text-sm font-black">
                   <h1>SOCIAL MEDIA</h1>
                 </div>
-                <p className='mt-5'>Instagram</p>
-                <p className='mt-5'>Twitter</p>
-                <p className='mt-5'>Facebook</p>
+                <a href='https://www.linkedin.com/in/zaldy-pratama-2891ab275/' className='mt-5 cursor-pointer block'>LinkedIn</a>
+                <a href='https://twitter.com/zaldypratama83' className='mt-5 cursor-pointer block'>Twitter</a>
+                <a href='' className='mt-5 block'>Instagram</a>
               </div>
           </div> 
           <div className="m-5"></div>
