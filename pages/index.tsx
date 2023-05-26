@@ -21,15 +21,15 @@ export default function Home() {
         <link href="./fontawesome/css/brands.css" rel="stylesheet"/>
         <link href="./fontawesome/css/solid.css" rel="stylesheet"/>
       </Head>
-      <div className="container box-border lg:px-32 font-title scroll-smooth">
+      <div className="container text-sm box-border md:px-12 lg:px-32 font-title scroll-smooth m-auto">
         <div className="navbar grid grid-cols-1 md:grid-cols-12 gap-5 w-full items-center mt-10 p-5 lg:p-0">
             <h1 className='md:col-span-2 xl:col-span-2 text-icon font-black'>ALDY</h1>
             <a href='#projects' className='md:col-span-2 xl:col-span-1'>Projects</a>
             <a href='https://www.linkedin.com/in/zaldy-pratama-2891ab275/' className='md:col-span-2 xl:col-span-1'>LinkedIn</a>
             <a href='#contact' className='md:col-span-2 xl:col-span-1'>Contact</a>
         </div>
-        <div className="hero bg-cyan-100 mt-12 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap">
-          <div className="col-span-12 lg:col-span-5">
+        <div className="hero shadow-lg bg-gradient-to-br from-blue-50 via-cyan-100 to-blue-50 mt-12 w-full lg:rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap">
+          <div className="col-span-12 p-5 lg:p-0 lg:col-span-6 xl:col-span-5">
               <div className="text-xl font-black">
                 <h1>HELLO, I AM</h1>
                 <h1>WEBSITE</h1>
@@ -38,17 +38,17 @@ export default function Home() {
               </div>
               <p className='mt-5'>I Like to design and create website that is responsive, interactive, simple and scalable</p>
               <div className="grid grid-cols-12 mt-5 text-center gap-5">
-                <div className='cursor-pointer col-span-6 bg-black text-white py-2'>Download CV</div>
-                <a href='mailto:zaldypratama83@gmail.com?subject=Get In Touch' className='cursor-pointer col-span-6 py-2 border border-black'>Contact Me</a>
+                <div className='button cursor-pointer col-span-12 md:col-span-5 lg:col-span-6 bg-black text-white py-2'>Download CV</div>
+                <a href='mailto:zaldypratama83@gmail.com?subject=Get In Touch' className='button cursor-pointer col-span-12 md:col-span-5 lg:col-span-6 py-2 border border-black'>Contact Me</a>
               </div>
           </div>
-         <div className="col-span-12 lg:col-span-7 w-3/5 ml-auto relative">
-          <img className='' src="photo.jpg" alt="" />
-          <motion.div animate={{rotate:180, x:20}} transition={{repeat:Infinity, duration:40}} className="w-full h-5/6 border-8 border-black absolute top-3 right-8"></motion.div>
+         <div className="col-span-12 lg:col-span-6 xl:col-span-7  w-full lg:w-4/5 xl:w-3/5 ml-auto my-auto relative">
+          <img className=' border mt-10 mb-10 md:w-7/12 lg:w-full md:m-auto md:my-20 lg:mt-0 lg:mb-0' src="photo.jpg" alt="" />
+          {/* <motion.div animate={{rotate:180, x:20}} transition={{repeat:Infinity, duration:40}} className="hidden lg:block w-full h-5/6 border-8 border-black absolute top-3 right-8"></motion.div> */}
          </div>
         </div>
-        <div className="techstack grid grid-cols-12 text-left mt-52 mb-52 font-title font-semibold px-20 content-center">
-            <div className="col-span-12 text-sm  mb-10 font-light font-body tracking-widest">
+        <div className="techstack grid grid-cols-12 text-left mt-10 lg:mt-52  mb-10 lg:mb-52 font-title font-semibold px-5 lg:px-20 content-center">
+            <div className="col-span-12   mb-10 font-light font-body tracking-widest">
               <div className="text-lg font-black mb-5">
                 <h1>ABOUT ME</h1>
               </div>
@@ -56,48 +56,48 @@ export default function Home() {
               My preferred tools are :
             </div>
             
-            <div className="col-span-2 text-sm grid grid-cols-12 gap-1">
-              <div className="col-span-2 justify-end">
+            <div className="col-span-12 my-5 lg:my-0 md:col-span-4 lg:col-span-2  grid grid-cols-12 gap-1">
+              <div className="self-center col-span-2 justify-end">
                 <img  className="aspect-square" src="/react.svg" alt="" />
               </div>
               <div className="col-span-10 text-left self-center">
                 React
               </div>
             </div>
-            <div className="col-span-2 text-sm grid grid-cols-12 gap-1">
-              <div className="col-span-2 justify-end">
+            <div className="col-span-12 my-5 lg:my-0 md:col-span-4 lg:col-span-2  grid grid-cols-12 gap-1">
+              <div className="self-center col-span-2 justify-end">
                 <img  className="aspect-square" src="/tailwind.svg" alt="" />
               </div>
               <div className="col-span-10 text-left self-center">
                 Tailwind
               </div>
             </div>
-            <div className="col-span-2 text-sm grid grid-cols-12 gap-1">
-              <div className="col-span-2 justify-end">
+            <div className="col-span-12 my-5 lg:my-0 md:col-span-4 lg:col-span-2  grid grid-cols-12 gap-1">
+              <div className="self-center col-span-2 justify-end">
                 <img  className="aspect-square" src="/figma.svg" alt="" />
               </div>
               <div className="col-span-10 text-left self-center">
                 Figma
               </div>
             </div>
-            <div className="col-span-2 text-sm grid grid-cols-12 gap-1">
-              <div className="col-span-2 justify-end">
+            <div className="col-span-12 my-5 lg:my-0 md:col-span-4 lg:col-span-2  grid grid-cols-12 gap-1">
+              <div className="self-center col-span-2 justify-end">
                 <img  className="aspect-square" src="/html.svg" alt="" />
               </div>
               <div className="col-span-10 text-left self-center">
                 HTML
               </div>
             </div>
-            <div className="col-span-2 text-sm grid grid-cols-12 gap-1">
-              <div className="col-span-2 justify-end">
+            <div className="col-span-12 my-5 lg:my-0 md:col-span-4 lg:col-span-2  grid grid-cols-12 gap-1">
+              <div className="self-center col-span-2 justify-end">
                 <img  className="aspect-square" src="/css.svg" alt="" />
               </div>
               <div className="col-span-10 text-left self-center">
                 CSS
               </div>
             </div>
-            <div className="col-span-2 text-sm grid grid-cols-12 gap-1">
-              <div className="col-span-2 justify-end">
+            <div className="col-span-12 my-5 lg:my-0 md:col-span-4 lg:col-span-2  grid grid-cols-12 gap-1">
+              <div className="self-center col-span-2 justify-end">
                 <img  className="aspect-square" src="/javascript.svg" alt="" />
               </div>
               <div className="col-span-10 text-left self-center">
@@ -107,46 +107,47 @@ export default function Home() {
         </div>
         <hr />
 
-        <div id='projects' className="self-center text-center">
-          <div className="mt-56"></div>
+        <div id='projects' className="px-5 lg:px-20 text-left">
+          <div className="mt-10 lg:mt-56"></div>
             <div className="text-lg font-black">
               <h1>MY WORK HIGHLIGHT</h1>
             </div>
-            <p className='mt-5'>Responsive | Interactive | Clean | Simple</p>
+            <p className='mt-5 lg:px-0'>Responsive | Interactive | Clean | Simple</p>
             
         </div>
         <div className="project mt-12 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap cursor-pointer">
-        <div className="col-span-12 lg:col-span-8 w-5/6 h-96 overflow-hidden shadow-md relative">
+        <div className="col-span-12 lg:col-span-8 w-full lg:w-5/6 h-96 overflow-hidden shadow-md relative">
             <motion.img whileHover={{bottom:0}} transition={{duration:5}} className='absolute' src="project_1.png" alt="" />
          </div>
           <div className="col-span-12 lg:col-span-4 self-center">
-              <div className="text-lg font-black">
+              <div className="font-black text-md mt-10 lg:mt-0">
                 <h1>BEANBAG BENGKULU</h1>
               </div>
               <p className='mt-5'>I Like to design and create website that is responsive, interactive, simple and scalable</p>
               <div className="grid grid-cols-12 mt-5 text-center gap-5">
-                <div className='cursor-pointer col-span-6 bg-black text-white py-2'>Download CV</div>
-                <div className='cursor-pointer col-span-6 py-2 border border-black'>Contact Me</div>
+                <div className='cursor-pointer col-span-6 bg-black text-white py-2'>Website &nbsp; <i className="fa-solid fa-square-arrow-up-right"></i></div>
+                <div className='cursor-pointer col-span-6 py-2 border border-black'>Github &nbsp; <i className="fa-brands fa-github"></i></div>
               </div>
           </div>
-         
         </div>
-        <div className="project mt-12 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap">
-        <div className="col-span-12 lg:col-span-4 text-right self-center">
-              <div className="text-lg font-black">
-                <h1>SPOTIFY CLONE</h1>
+        <hr className='lg:hidden my-10' />
+        <div className="project mt-12 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 cursor-pointer">
+        
+          <div className="col-span-12 lg:col-span-4 text-right self-center">
+              <div className="font-black text-md mt-10 lg:mt-0">
+                <h1>BEANBAG BENGKULU</h1>
               </div>
               <p className='mt-5'>I Like to design and create website that is responsive, interactive, simple and scalable</p>
               <div className="grid grid-cols-12 mt-5 text-center gap-5">
-                <div className='cursor-pointer col-span-6 bg-black text-white py-2'>Download CV</div>
-                <div className='cursor-pointer col-span-6 py-2 border border-black'>Contact Me</div>
+                <div className='cursor-pointer col-span-6 bg-black text-white py-2'>Website &nbsp; <i className="fa-solid fa-square-arrow-up-right"></i></div>
+                <div className='cursor-pointer col-span-6 py-2 border border-black'>Github &nbsp; <i className="fa-brands fa-github"></i></div>
               </div>
           </div>
-          <div className="col-span-12 lg:col-span-8 w-5/6 ml-auto">
-              <img className='' src="photo.jpg" alt="" />
-          </div>
+          <div className="col-span-12 lg:col-span-8 w-full lg:w-5/6 h-96 overflow-hidden shadow-md relative ml-auto mt-10 lg:mt-0">
+            <motion.img whileHover={{bottom:0}} transition={{duration:5}} className='absolute' src="project_1.png" alt="" />
+         </div>
         </div>
-        <div id='contact' className="Contact bg-cyan-100 mt-24 mb-52 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap">
+        <div id='contact' className="Contact shadow-lg bg-cyan-100 mt-24 mb-52 w-full lg:rounded-3xl p-5 md:p-20 lg:py-30 grid grid-cols-12">
           <div className="col-span-12 lg:col-span-12 text-center">
               <div className="text-xl font-black">
                 <h1>GET IN TOUCH</h1>
@@ -154,31 +155,33 @@ export default function Home() {
               <p className='mt-5'>If you’d like to chat about a project or just have question, just contact me via email or whatsapp</p>
               <div className="grid grid-cols-12 mt-5 text-center gap-5 ">
                 <div className="col-span-2"></div>
-                <a href="mailto:zaldypratama83@gmail.com?subject=Get In Touch" className='cursor-pointer col-span-4 bg-black text-white py-2'> <i className="fa-solid fa-envelope mx-2"></i> EMAIL</a>
-                <a href="https://wa.me/+6289632167121/?text=Hello" className='cursor-pointer col-span-4 py-2 border border-black'> <i className="fa-brands fa-whatsapp mx-2"></i> WHATSAPP</a>
+                <a href="mailto:zaldypratama83@gmail.com?subject=Get In Touch" className='cursor-pointer col-span-12 lg:col-span-4 bg-black text-white py-2'> <i className="fa-solid fa-envelope mx-2"></i> EMAIL</a>
+                <a href="https://wa.me/+6289632167121/?text=Hello" className='cursor-pointer col-span-12 lg:col-span-4 py-2 border border-black'> <i className="fa-brands fa-whatsapp mx-2"></i> WHATSAPP</a>
                 <div className="col-span-2"></div>
               </div>
           </div>
         </div>
         <hr />
         <div className="m-5"></div>
-        <div className="footer mt-12 w-full rounded-3xl grid grid-cols-12 gap mb-5">
+        <div className="footer mt-12 w-full rounded-3xl grid grid-cols-12 gap mb-5 p-5 lg:p-0">
           <div className="col-span-12 lg:col-span-6">
               <div className="text-xl font-black">
                 <h1>ALDY</h1>
               </div>
               <p className='mt-5'>Always Learning Something New Everyday</p>
           </div>
-          <div className="col-span-12 lg:col-span-6 text-right grid grid-cols-12 ">
-              <div className="col-span-6">
-                <div className="text-sm font-black">
+          <div className="col-span-12 lg:col-span-6 text-left lg:text-right grid grid-cols-12 ">
+            <div className="my-5 block lg:hidden"></div>
+              <div className="col-span-12 lg:col-span-6">
+                <div className=" font-black">
                   <h1>CONTACT</h1>
                 </div>
                 <a href='mailto:zaldypratama83@gmail.com?subject=Get In Touch' className='mt-5 cursor-pointer block'>Email</a>
                 <a href='https://wa.me/+6289632167121/?text=Hello' className='mt-5 cursor-pointer block'>Whatsapp</a>
               </div>
-              <div className="col-span-6">
-                <div className="text-sm font-black">
+              <div className="my-5 block lg:hidden"></div>
+              <div className="col-span-12 lg:col-span-6">
+                <div className=" font-black">
                   <h1>SOCIAL MEDIA</h1>
                 </div>
                 <a href='https://www.linkedin.com/in/zaldy-pratama-2891ab275/' className='mt-5 cursor-pointer block'>LinkedIn</a>
@@ -187,7 +190,7 @@ export default function Home() {
               </div>
           </div> 
           <div className="m-5"></div>
-          <div className="text-center col-span-12">
+          <div className="text-left lg:text-center col-span-12">
             <hr className='my-5' />
               &copy; {new Date().getFullYear()} Portfolio by Aldy
           </div>

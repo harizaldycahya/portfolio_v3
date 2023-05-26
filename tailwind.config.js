@@ -25,7 +25,8 @@ module.exports = {
         }
         ],
         lg: '1.5rem',
-        sm: '1rem',
+        md: '1.2rem',
+        sm: '.95rem',
         label: ['.8rem',{
           lineHeight: '1rem',
           letterSpacing: '.1rem',
