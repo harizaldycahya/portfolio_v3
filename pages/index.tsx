@@ -9,7 +9,15 @@ import Head from 'next/head'
 import { useEffect, useState,useCallback } from "react"
 import {motion} from 'framer-motion'
 
+
+
+
 export default function Home() {
+  const [openMenu, setOpenMenu] = useState(false);
+  const toggleMenu = () => {
+      setOpenMenu(!openMenu);
+  };
+
   return (
     <>
       <Head>
@@ -21,8 +29,19 @@ export default function Home() {
         <link href="./fontawesome/css/brands.css" rel="stylesheet"/>
         <link href="./fontawesome/css/solid.css" rel="stylesheet"/>
       </Head>
+      <div className="md:hidden px-8 pt-10 grid grid-cols-12"><h1 className='col-span-6 inline-block text-icon font-black text-left'>ALDY</h1> <i onClick={toggleMenu} className="col-span-6 cursor-pointer text-right text-lg fa-solid fa-bars"></i> </div>
       <div className="container text-sm box-border md:px-12 lg:px-32 font-title scroll-smooth m-auto">
-        <div className="navbar grid grid-cols-1 md:grid-cols-12 gap-5 w-full items-center mt-10 p-5 lg:p-0">
+        {openMenu ? (
+             <div className="navbar grid grid-cols-12 mx-8 mt-5 text-right">
+                <div className='col-span-5'></div>
+                <div className='col-span-7 grid grid-cols-12 bg-slate-100 rounded-lg'>
+                  <a href='#projects' className='col-span-12 p-3'>Projects</a>
+                  <a href='https://www.linkedin.com/in/zaldy-pratama-2891ab275/' className='col-span-12 p-3'>LinkedIn</a>
+                  <a href='#contact' className='col-span-12 p-3'>Contact</a>
+                </div>
+            </div>
+            ) : null}
+        <div className="navbar hidden md:grid grid-cols-1 md:grid-cols-12 gap-5 w-full items-center mt-10 p-5 lg:p-0">
             <h1 className='md:col-span-2 xl:col-span-2 text-icon font-black'>ALDY</h1>
             <a href='#projects' className='md:col-span-2 xl:col-span-1'>Projects</a>
             <a href='https://www.linkedin.com/in/zaldy-pratama-2891ab275/' className='md:col-span-2 xl:col-span-1'>LinkedIn</a>
@@ -43,7 +62,7 @@ export default function Home() {
               </div>
           </div>
          <div className="col-span-12 lg:col-span-6 xl:col-span-7  w-full lg:w-4/5 xl:w-3/5 ml-auto my-auto relative">
-          <img className=' border mt-10 mb-10 md:w-7/12 lg:w-full md:m-auto md:my-20 lg:mt-0 lg:mb-0' src="photo.jpg" alt="" />
+          <img className=' border mt-10 mb-10 md:w-7/12 lg:w-full md:m-auto md:my-20 lg:mt-0 lg:mb-0' src="photo_1.jpg" alt="" />
           {/* <motion.div animate={{rotate:180, x:20}} transition={{repeat:Infinity, duration:40}} className="hidden lg:block w-full h-5/6 border-8 border-black absolute top-3 right-8"></motion.div> */}
          </div>
         </div>
