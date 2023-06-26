@@ -71,7 +71,7 @@ export default function Home() {
               <div className="text-lg font-black mb-5">
                 <h1>ABOUT ME</h1>
               </div>
-              Hello, My Name is Harizaldy Cahya Pratama, I'm Fresh Graduate from University of Bengkulu with Bachelor's Degree of Informatics Enginering With GPA 3.50/4.00. I have experience working on various web development projects using PHP with the laravel framework. The last few months I've been exploring frontend development using React.js and Tailwind CSS. I have an interest in a career as a full stack web developer. 
+              Hello, My Name is Harizaldy Cahya Pratama, I&apos;m Fresh Graduate from University of Bengkulu with Bachelor&apos;s Degree of Informatics Enginering With GPA 3.50/4.00. I have experience working on various web development projects using PHP with the laravel framework. The last few months I&apos;ve been exploring frontend development using React.js and Tailwind CSS. I have an interest in a career as a full stack web developer. 
               My preferred tools are :
             </div>
             <div className="col-span-12 my-5 lg:my-0 md:col-span-4 lg:col-span-2  grid grid-cols-12 gap-1">
@@ -124,26 +124,27 @@ export default function Home() {
             </div>
         </div>
         <hr />
-
+        {/* FULLSTACK PROJECTS */}
         <div id='projects' className="px-5 lg:px-20 text-left">
           <div className="mt-10 lg:mt-56"></div>
             <div className="text-lg font-black">
-              <h1>MY WORK HIGHLIGHT</h1>
+              <h1>MY FULLSTACK PROJECTS HIGHLIGHT</h1>
             </div>
-            <p className='mt-5 lg:px-0'>Responsive | Interactive | Clean | Simple</p>
-            
+            <p className='mt-5 lg:px-0'>TOOLS {"(LARAVEL, PHP, BOOTSTRAP, CSS, & MYSQL)"}</p>  
         </div>
         <div className="project mt-12 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap">
         <div className="col-span-12 lg:col-span-7 w-full lg:w-5/6 h-96 overflow-hidden shadow-md relative cursor-pointer">
-            <motion.img whileHover={{bottom:0}} transition={{duration:5}} className='absolute' src="project_1.png" alt="" />
+            <motion.img  whileHover={{top:-120}} transition={{duration:5}} className='absolute top-0' src="project_1.png" alt="" />
          </div>
           <div className="col-span-12 lg:col-span-5 self-center">
-              <div className="font-black text-md mt-10 lg:mt-0">
+              <div className="font-extrabold text-md mt-10 lg:mt-0">
                 <h1>CMS {'(Content Management System)'} Website</h1>
               </div>
               <p className='mt-5'>This website was created for the Department of Master of Management and Master of Applied Economics at the University Of Bengkulu. This website helps both departments to introduce their programs, post articles, news, and many more.</p>
-              <a href='https://mm.feb.unib.ac.id/id' className='mt-5 block underline cursor-pointer transition transform hover:translate-x-1'>Visit Master of Management<i className="ml-5 fa-solid fa-square-arrow-up-right"></i></a>
-              <a href='https://mpp.feb.unib.ac.id/id' className='mt-5 block underline cursor-pointer transition transform hover:translate-x-1'>Visit Master of Applied Economics<i className="ml-5 fa-solid fa-square-arrow-up-right"></i></a>
+              
+              <a href='https://mm.feb.unib.ac.id/id' className='mt-5 font-semibold block underline cursor-pointer transition transform hover:translate-x-1'>Visit Master of Management Website &nbsp; <i className="fa-solid fa-square-arrow-up-right"></i></a>
+              
+              <a href='https://mpp.feb.unib.ac.id/id' className='mt-5 font-semibold block underline cursor-pointer transition transform hover:translate-x-1'>Visit Master of Applied Economics Website &nbsp; <i className="fa-solid fa-square-arrow-up-right"></i></a>
               <div className="grid grid-cols-12 mt-5 text-center gap-5">
                 <a href='https://github.com/harizaldycahya/prodi' className='cursor-pointer col-span-8 bg-black text-white py-2'>Visit Github &nbsp; <i className="fa-brands fa-github"></i></a>
                 {/* <a href='https://mm.feb.unib.ac.id' className='cursor-pointer col-span-6 bg-black text-white py-2'>Website &nbsp; <i className="fa-solid fa-square-arrow-up-right"></i></a> */}
@@ -154,26 +155,70 @@ export default function Home() {
         <hr className='lg:hidden my-10' />
         <div className="project mt-12 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 cursor-pointer">
         
-          <div className="col-span-12 lg:col-span-4 text-right self-center">
+          <div className="hidden lg:block col-span-12 lg:col-span-4 text-right self-center">
               <div className="font-black text-md mt-10 lg:mt-0">
-                <h1>BEANBAG BENGKULU</h1>
+                <h1>Support Ticketing System</h1>
               </div>
-              <p className='mt-5'>I Like to design and create website that is responsive, interactive, simple and scalable</p>
+              <p className='mt-5'>This website was created to help OASSE.ID company to give fast and satisfying service to their customers and can also help OASSE.ID track problems that occur in the customer service process. </p>
               <div className="grid grid-cols-12 mt-5 text-center gap-5">
-                <div className='cursor-pointer col-span-6 bg-black text-white py-2'>Website &nbsp; <i className="fa-solid fa-square-arrow-up-right"></i></div>
-                <div className='cursor-pointer col-span-6 py-2 border border-black'>Github &nbsp; <i className="fa-brands fa-github"></i></div>
+                {/* <div className='cursor-pointer col-span-6 bg-black text-white py-2'>Website &nbsp; <i className="fa-solid fa-square-arrow-up-right"></i></div>
+                <div className='cursor-pointer col-span-6 py-2 border border-black'>Github &nbsp; <i className="fa-brands fa-github"></i></div> */}
+              <div className='col-span-4'></div>
+              <a href='https://github.com/harizaldycahya/support-ticket' className='cursor-pointer col-span-8 bg-black text-white py-2'>Visit Github &nbsp; <i className="fa-brands fa-github"></i></a>
               </div>
           </div>
           <div className="col-span-12 lg:col-span-8 w-full lg:w-5/6 h-96 overflow-hidden shadow-md relative ml-auto mt-10 lg:mt-0">
-            <motion.img whileHover={{bottom:0}} transition={{duration:5}} className='absolute' src="project_1.png" alt="" />
+            <motion.img  whileHover={{top:-120}} transition={{duration:4}} className='absolute top-0' src="project_2.png" alt="" />
          </div>
+         <div className="lg:hidden col-span-12 lg:col-span-4 text-left self-center">
+              <div className="font-black text-md mt-10 lg:mt-0">
+                <h1>Support Ticketing System</h1>
+              </div>
+              <p className='mt-5'>This website was created to help OASSE.ID company to give fast and satisfying service to their customers and can also help OASSE.ID track problems that occur in the customer service process. </p>
+              <div className="grid grid-cols-12 mt-5 text-center gap-5">
+                {/* <div className='cursor-pointer col-span-6 bg-black text-white py-2'>Website &nbsp; <i className="fa-solid fa-square-arrow-up-right"></i></div>
+                <div className='cursor-pointer col-span-6 py-2 border border-black'>Github &nbsp; <i className="fa-brands fa-github"></i></div> */}
+              
+              <a href='https://github.com/harizaldycahya/support-ticket' className='cursor-pointer col-span-8 bg-black text-white py-2'>Visit Github &nbsp; <i className="fa-brands fa-github"></i></a>
+              </div>
+              <div className='col-span-4'></div>
+          </div>
         </div>
-        <div id='contact' className="Contact shadow-lg bg-cyan-100 mt-24 mb-52 w-full lg:rounded-3xl p-5 md:p-20 lg:py-30 grid grid-cols-12">
+
+        {/* FRONTEND PROJECTS */}
+        <div id='projects' className="px-5 lg:px-20 text-left">
+          <div className="mt-10 lg:mt-56"></div>
+            <div className="text-lg font-black">
+              <h1>MY FRONTEND PROJECTS HIGHLIGHT</h1>
+            </div>
+            <p className='mt-5 lg:px-0'>TOOLS {"(REACT.JS, TAILWIND CSS, FRAMERMOTION)"}</p>  
+        </div>
+        <div className="project mt-12 w-full rounded-3xl p-5 lg:p-20 grid grid-cols-12 gap">
+        <div className="col-span-12 lg:col-span-7 w-full lg:w-5/6 h-96 overflow-hidden shadow-md relative cursor-pointer">
+            <motion.img  whileHover={{top:-120}} transition={{duration:5}} className='absolute top-0' src="project_3.png" alt="" />
+         </div>
+          <div className="col-span-12 lg:col-span-5 self-center">
+              <div className="font-extrabold text-md mt-10 lg:mt-0">
+                <h1>Spotify Clone</h1>
+              </div>
+              <p className='mt-5'>This website was created using tailwind css and next.js. Components of this website is fully responsive for different type of screen sizes. This project is very helpfull for me to learn how to create website that is user friendly with great UX/UI design.</p>
+              
+              <a href='https://spotify-clone-v2-gray.vercel.app/' className='mt-5 font-semibold block underline cursor-pointer transition transform hover:translate-x-1'>Visit Spotify Clone &nbsp; <i className="fa-solid fa-square-arrow-up-right"></i></a>
+              <div className="grid grid-cols-12 mt-5 text-center gap-5">
+                <a href='https://github.com/harizaldycahya/spotify_clone_v2' className='cursor-pointer col-span-8 bg-black text-white py-2'>Visit Github &nbsp; <i className="fa-brands fa-github"></i></a>
+                {/* <a href='https://mm.feb.unib.ac.id' className='cursor-pointer col-span-6 bg-black text-white py-2'>Website &nbsp; <i className="fa-solid fa-square-arrow-up-right"></i></a> */}
+                {/* <a href='https://github.com/harizaldycahya/prodi' className='cursor-pointer col-span-6 py-2 border border-black'>Github &nbsp; <i className="fa-brands fa-github"></i></a> */}
+              </div>
+          </div>
+        </div>
+        <hr className='lg:hidden my-10' />
+
+        <div id='contact' className="Contact shadow-lg bg-gradient-to-br from-blue-50 via-cyan-100 to-blue-50 mt-24 mb-52 w-full lg:rounded-3xl p-6 md:p-20 lg:py-30 grid grid-cols-12">
           <div className="col-span-12 lg:col-span-12 text-center">
               <div className="text-xl font-black">
                 <h1>GET IN TOUCH</h1>
               </div>
-              <p className='mt-5'>If you’d like to chat about a project or just have question, just contact me via email or whatsapp</p>
+              <p className='mt-5'>If you&apos;d like to chat about a project or just have question, just contact me via email or whatsapp</p>
               <div className="grid grid-cols-12 mt-5 text-center gap-5 ">
                 <div className="col-span-2"></div>
                 <a href="mailto:zaldypratama83@gmail.com?subject=Get In Touch" className='cursor-pointer col-span-12 lg:col-span-4 bg-black text-white py-2'> <i className="fa-solid fa-envelope mx-2"></i> EMAIL</a>
