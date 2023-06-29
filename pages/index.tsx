@@ -57,7 +57,7 @@ export default function Home() {
               </div>
               <p className='mt-5'>I Like to design and create website that is responsive, interactive, simple and scalable</p>
               <div className="grid grid-cols-12 mt-5 text-center gap-5">
-                <div className='button cursor-pointer col-span-12 md:col-span-5 lg:col-span-6 bg-black text-white py-2'>Download CV</div>
+                <a href='https://drive.google.com/file/d/1MzFStehBA9Z5cF6oefutG043ej_EoHjU/view?usp=sharing' className='button cursor-pointer col-span-12 md:col-span-5 lg:col-span-6 bg-black text-white py-2'>Download CV</a>
                 <a href='mailto:zaldypratama83@gmail.com?subject=Get In Touch' className='button cursor-pointer col-span-12 md:col-span-5 lg:col-span-6 py-2 border border-black'>Contact Me</a>
               </div>
           </div>
